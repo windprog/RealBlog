@@ -23,11 +23,11 @@ ul {
 }
 
 html {
-  background: url(/admin/image/htmlbg.png) repeat;
+  background: url(http://cache.codedig.com/blogcache/admin/image/htmlbg.png) repeat;
 }
 div#header-holder {
   height: 72px;
-  background: url(/admin/image/header.png) repeat-x 0 -20px;
+  background: url(http://cache.codedig.com/blogcache/admin/image/header.png) repeat-x 0 -20px;
 }
 div#header {
   /*overflow:hidden;*/
@@ -40,7 +40,7 @@ div#header a {
   outline: none;
 }
 div#content-holder {
-  background: url(/admin/image/content-holder.png) repeat-x;
+  background: url(http://cache.codedig.com/blogcache/admin/image/content-holder.png) repeat-x;
   padding-bottom: 20px;
   padding-top: 20px;
 }
@@ -67,7 +67,7 @@ div#logo-holder {
   text-indent: -9999px;
   margin-left: -5px;
   outline: none;
-  background: url(/admin/image/logo-0317.png) no-repeat 0 center;
+  background: url(http://cache.codedig.com/blogcache/admin/image/logo-0317.png) no-repeat 0 center;
 }
 #logo a:active {
   position: relative;
@@ -140,7 +140,7 @@ zoom: 1;
   display: block;
   width: 96px;
   height: 45px;
-  background: url(/admin/image/startpage-1231.png) no-repeat -400px -200px;
+  background: url(http://cache.codedig.com/blogcache/admin/image/startpage-1231.png) no-repeat -400px -200px;
   border: 0;
   cursor: pointer;
   float: left;
@@ -157,7 +157,7 @@ zoom: 1;
 #startpage .input-wrap {
   width: 218px;
   height: 52px;
-  background: url(/admin/image/startpage-1231.png) no-repeat -280px -52px;
+  background: url(http://cache.codedig.com/blogcache/admin/image/startpage-1231.png) no-repeat -280px -52px;
   position: relative;
   float: left;
   margin-right: 5px;
@@ -167,7 +167,7 @@ zoom: 1;
   float: left;
   width: 16px;
   height: 16px;
-  background: url(/admin/image/startpage-1231.png) no-repeat;
+  background: url(http://cache.codedig.com/blogcache/admin/image/startpage-1231.png) no-repeat;
   margin: 18px 0 0 15px;
   _margin-left: 8px;
 }
@@ -187,7 +187,7 @@ zoom: 1;
 #startpage .input-wrap {
   width: 218px;
   height: 52px;
-  background: url(/admin/image/startpage-1231.png) no-repeat -280px -52px;
+  background: url(http://cache.codedig.com/blogcache/admin/image/startpage-1231.png) no-repeat -280px -52px;
   position: relative;
   float: left;
   margin-right: 5px;
@@ -212,7 +212,7 @@ zoom: 1;
   float: left;
   width: 16px;
   height: 16px;
-  background: url(/admin/image/startpage-1231.png) no-repeat;
+  background: url(http://cache.codedig.com/blogcache/admin/image/startpage-1231.png) no-repeat;
   margin: 18px 0 0 15px;
 }
 
@@ -237,7 +237,7 @@ z-index: 10;
   width: 197px;
   height: 36px;
   line-height: 36px;
-  background: url(/admin/image/startpage-1231.png) no-repeat -300px -130px;
+  background: url(http://cache.codedig.com/blogcache/admin/image/startpage-1231.png) no-repeat -300px -130px;
   top: 50px;
   left: 10px;
   text-align: center;
@@ -252,7 +252,7 @@ z-index: 10;
   text-indent: -9999px;
   position: relative;
   width: 500px;
-  background: url(/admin/image/startpage.png) no-repeat left bottom;
+  background: url(http://cache.codedig.com/blogcache/admin/image/startpage.png) no-repeat left bottom;
 }
 #startpage #login-wrap {
   margin: 0 auto;
@@ -264,7 +264,7 @@ z-index: 10;
   padding: 10px;
   height: 32px;
   line-height: 32px;
-  background: transparent url(/admin/image/blank.png) repeat;
+  background: transparent url(http://cache.codedig.com/blogcache/admin/image/blank.png) repeat;
   border: 0;
   outline: none;
   font-family: "Microsoft Yahei", Tahoma, Arial, Helvetica, STHeiti, serif;
@@ -284,7 +284,7 @@ z-index: 10;
   text-decoration: none;
   font-size: 12px;
   padding-left: 10px;
-  background: url(/admin/image/startpage-1231.png) no-repeat 0 -478px;
+  background: url(http://cache.codedig.com/blogcache/admin/image/startpage-1231.png) no-repeat 0 -478px;
 }
 #startpage #third-party-login:hover,
 #startpage #register-as-student:hover {

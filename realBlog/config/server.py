@@ -16,3 +16,6 @@ BLOGS = {
         STR_ADMINS: 'admin',
     }
 }
+
+BCS_AK = "A253f188574249ac454de83ffd54b6c9"
+BCS_SK = "EAc5f62bfdc8f6c551ef6f389f1f3a5a"

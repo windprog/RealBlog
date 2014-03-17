@@ -8,25 +8,32 @@
 UE.I18N['en'] = {
     'labelMap':{
         'anchor':'Anchor', 'undo':'Undo', 'redo':'Redo', 'bold':'Bold', 'indent':'Indent', 'snapscreen':'SnapScreen',
-        'italic':'Italic', 'underline':'Underline', 'strikethrough':'Strikethrough', 'subscript':'SubScript',
+        'italic':'Italic', 'underline':'Underline', 'strikethrough':'Strikethrough', 'subscript':'SubScript','fontborder':'text border',
         'superscript':'SuperScript', 'formatmatch':'Format Match', 'source':'Source', 'blockquote':'BlockQuote',
         'pasteplain':'PastePlain', 'selectall':'SelectAll', 'print':'Print', 'preview':'Preview',
         'horizontal':'Horizontal', 'removeformat':'RemoveFormat', 'time':'Time', 'date':'Date',
         'unlink':'Unlink', 'insertrow':'InsertRow', 'insertcol':'InsertCol', 'mergeright':'MergeRight', 'mergedown':'MergeDown',
-        'deleterow':'DeleteRow', 'deletecol':'DeleteCol', 'splittorows':'SplitToRows', 'splittocols':'SplitToCols', 'splittocells':'SplitToCells',
-        'mergecells':'MergeCells', 'deletetable':'DeleteTable', 'insertparagraphbeforetable':'ParagraphBeforeTable', 'cleardoc':'Clear',
-        'fontfamily':'FontFamily', 'fontsize':'FontSize', 'paragraph':'Paragraph', 'insertimage':'Image', 'inserttable':'Table', 'link':'Link',
+        'deleterow':'DeleteRow', 'deletecol':'DeleteCol', 'splittorows':'SplitToRows','insertcode':'insert code',
+        'splittocols':'SplitToCols', 'splittocells':'SplitToCells','deletecaption':'DeleteCaption','inserttitle':'InsertTitle',
+        'mergecells':'MergeCells', 'deletetable':'DeleteTable', 'cleardoc':'Clear', 'insertparagraphbeforetable':"InsertParagraphBeforeTable",
+        'fontfamily':'FontFamily', 'fontsize':'FontSize', 'paragraph':'Paragraph', 'insertimage':'Image','edittable':'Edit Table', edittd:'Edit Td','link':'Link',
         'emotion':'Emotion', 'spechars':'Spechars', 'searchreplace':'SearchReplace', 'map':'BaiduMap', 'gmap':'GoogleMap',
         'insertvideo':'Video', 'help':'Help', 'justifyleft':'JustifyLeft', 'justifyright':'JustifyRight', 'justifycenter':'JustifyCenter',
         'justifyjustify':'Justify', 'forecolor':'FontColor', 'backcolor':'BackColor', 'insertorderedlist':'OL',
         'insertunorderedlist':'UL', 'fullscreen':'FullScreen', 'directionalityltr':'EnterFromLeft', 'directionalityrtl':'EnterFromRight',
-        'rowspacingtop':'RowSpacingTop', 'rowspacingbottom':'RowSpacingBottom', 'highlightcode':'Code', 'pagebreak':'PageBreak', 'insertframe':'Iframe', 'imagenone':'Default',
+        'rowspacingtop':'RowSpacingTop', 'rowspacingbottom':'RowSpacingBottom', 'pagebreak':'PageBreak', 'insertframe':'Iframe', 'imagenone':'Default',
         'imageleft':'ImageLeft', 'imageright':'ImageRight', 'attachment':'Attachment', 'imagecenter':'ImageCenter', 'wordimage':'WordImage',
-        'lineheight':'LineHeight','edittd':'EditTD', 'customstyle':'CustomStyle', 'scrawl':'Scrawl', 'autotypeset':'AutoTypeset',
-        'webapp':'WebAPP', 'touppercase':'UpperCase', 'tolowercase':'LowerCase','template':'Template','background':'Background',
-        'music':'Music'
+        'lineheight':'LineHeight','edittip':'EditTip','customstyle':'CustomStyle', 'scrawl':'Scrawl', 'autotypeset':'AutoTypeset',
+        'webapp':'WebAPP', 'touppercase':'UpperCase', 'tolowercase':'LowerCase','template':'Template','background':'Background',inserttable:'InsertTable',
+        'music':'Music', 'charts': 'charts','drafts': 'Load from Drafts'
     },
     'insertorderedlist':{
+        'num':'1,2,3...',
+        'num1':'1),2),3)...',
+        'num2':'(1),(2),(3)...',
+        'cn':'一,二,三....',
+        'cn1':'一),二),三)....',
+        'cn2':'(一),(二),(三)....',
         'decimal':'1,2,3...',
         'lower-alpha':'a,b,c...',
         'lower-roman':'i,ii,iii...',
@@ -36,7 +43,9 @@ UE.I18N['en'] = {
     'insertunorderedlist':{
         'circle':'○ Circle',
         'disc':'● Circle dot',
-        'square':'■ Rectangle '
+        'square':'■ Rectangle ',
+        'dash' :'－ Dash',
+        'dot' : '。dot'
     },
     'paragraph':{'p':'Paragraph', 'h1':'Title 1', 'h2':'Title 2', 'h3':'Title 3', 'h4':'Title 4', 'h5':'Title 5', 'h6':'Title 6'},
     'fontfamily':{
@@ -72,6 +81,32 @@ UE.I18N['en'] = {
         'callBackErrorMsg':"The callback data is wrong,please check the config!",
         'uploadErrorMsg':"Upload error,please check your server environment! "
     },
+    'insertcode':{
+        'as3':'ActionScript3',
+        'bash':'Bash/Shell',
+        'cpp':'C/C++',
+        'css':'Css',
+        'cf':'CodeFunction',
+        'c#':'C#',
+        'delphi':'Delphi',
+        'diff':'Diff',
+        'erlang':'Erlang',
+        'groovy':'Groovy',
+        'html':'Html',
+        'java':'Java',
+        'jfx':'JavaFx',
+        'js':'Javascript',
+        'pl':'Perl',
+        'php':'Php',
+        'plain':'Plain Text',
+        'ps':'PowerShell',
+        'python':'Python',
+        'ruby':'Ruby',
+        'scala':'Scala',
+        'sql':'Sql',
+        'vb':'Vb',
+        'xml':'Xml'
+    },
     'confirmClear':"Do you confirm to clear the Document?",
     'contextMenu':{
         'delete':"Delete",
@@ -82,19 +117,37 @@ UE.I18N['en'] = {
         'unlink':"Unlink",
         'paragraph':"Paragraph",
         'edittable':"Table property",
+        'aligncell':'Align cell',
+        'aligntable':'Table alignment',
+        'tableleft':'Left float',
+        'tablecenter':'Center',
+        'tableright':'Right float',
+        'aligntd':'Cell alignment',
         'edittd':"Cell property",
+        'setbordervisible':'set table edge visible',
         'table':"Table",
         'justifyleft':'Justify Left',
         'justifyright':'Justify Right',
         'justifycenter':'Justify Center',
         'justifyjustify':'Default',
         'deletetable':"Delete table",
-        'insertparagraphbeforetable':"Insert paragraph",
+        'insertparagraphbefore':"InsertedBeforeLine",
+        'insertparagraphafter':'InsertedAfterLine',
         'inserttable':'Insert table',
+        'insertcaption':'Insert caption',
+        'deletecaption':'Delete Caption',
+        'inserttitle':'Insert Title',
+        'deletetitle':'Delete Title',
+        'inserttitlecol':'Insert Title Col',
+        'deletetitlecol':'Delete Title Col',
+        'averageDiseRow':'AverageDise Row',
+        'averageDisCol':'AverageDis Col',
         'deleterow':"Delete row",
         'deletecol':"Delete col",
         'insertrow':"Insert row",
         'insertcol':"Insert col",
+        'insertrownext':'Insert Row Next',
+        'insertcolnext':'Insert Col Next',
         'mergeright':"Merge right",
         'mergeleft':"Merge left",
         'mergedown':"Merge down",
@@ -102,11 +155,25 @@ UE.I18N['en'] = {
         'splittocells':"Split to cells",
         'splittocols':"Split to Cols",
         'splittorows':"Split to Rows",
+        'tablesort':'Table sorting',
+        'enablesort':'Sorting Enable',
+        'disablesort':'Sorting Disable',
+        'reversecurrent':'Reverse current',
+        'orderbyasc':'Order By ASCII',
+        'reversebyasc':'Reverse By ASCII',
+        'orderbynum':'Order By Num',
+        'reversebynum':'Reverse By Num',
+        'borderbk':'Border shading',
+        'setcolor':'interlaced color',
+        'unsetcolor':'Cancel interlacedcolor',
+        'setbackground':'Background interlaced',
+        'unsetbackground':'Cancel Bk interlaced',
+        'redandblue':'Blue and red',
+        'threecolorgradient':'Three-color gradient',
         'copy':"Copy(Ctrl + c)",
         'copymsg':"Please use 'Ctrl + c' instead!",
         'paste':"Paste(Ctrl + v)",
-        'pastemsg':"Please use 'Ctrl + v' instead!",
-        'highlightcode':'insert code'
+        'pastemsg':"Please use 'Ctrl + v' instead!"
     },
 
     'anthorMsg':"Link",
@@ -127,6 +194,10 @@ UE.I18N['en'] = {
     'unset':'Language hasn\'t been set!',
     't_row':'row',
     't_col':'col',
+    'pasteOpt':'Paste Option',
+    'pasteSourceFormat':"Keep Source Formatting",
+    'tagFormat':'Keep tag',
+    'pasteTextFormat':'Keep Text only',
     'more':'More',
     'autoTypeSet':{
         mergeLine:"Merge empty line",
@@ -145,9 +216,10 @@ UE.I18N['en'] = {
     'background':{
         'static':{
             'lang_background_normal':'Normal',
-            'lang_background_local':'Local',
+            'lang_background_local':'Online',
             'lang_background_set':'Background Set',
-            'lang_background_none':'None',
+            'lang_background_none':'No Background',
+            'lang_background_colored':'Colored Background',
             'lang_background_color':'Color Set',
             'lang_background_netimg':'Net-Image',
             'lang_background_align':'Align Type',
@@ -178,8 +250,9 @@ UE.I18N['en'] = {
             'imgSearchBtn':{value:"Search"},
             'imgSearchReset':{value:"Clear"},
             'upload':{style:'background: url(upload.png);'},
-            'duiqi':{style:'background: url(imglabel.png) -12px 2px no-repeat;'}
-
+            'duiqi':{style:'background: url(imglabel.png) -12px 2px no-repeat;'},
+            'lang_savePath':'Select savePath:',
+            'lang_load_savePath': 'Loading...'
         },
         'netError':"Network error,please check the config!",
         'noUploadImage':"No pictures has been uploaded！",
@@ -265,6 +338,29 @@ UE.I18N['en'] = {
             'lang_input_anchorName':'Anchor Name:'
         }
     },
+    'charts':{
+        'static':{
+            'lang_data_source':'Data source:',
+            'lang_chart_format': 'Chart format:',
+            'lang_data_align': 'Align',
+            'lang_chart_align_same': 'Consistent with the X-axis Y-axis',
+            'lang_chart_align_reverse': 'X-axis Y-axis opposite',
+            'lang_chart_title': 'Title',
+            'lang_chart_main_title': 'main title:',
+            'lang_chart_sub_title': 'sub title:',
+            'lang_chart_x_title': 'X-axis title:',
+            'lang_chart_y_title': 'Y-axis title:',
+            'lang_chart_tip': 'Prompt',
+            'lang_cahrt_tip_prefix': 'prefix:',
+            'lang_cahrt_tip_description': '仅饼图有效， 当鼠标移动到饼图中相应的块上时，提示框内的文字的前缀',
+            'lang_chart_data_unit': 'Unit',
+            'lang_chart_data_unit_title': 'unit:',
+            'lang_chart_data_unit_description': '显示在每个数据点上的数据的单位， 比如： 温度的单位 ℃',
+            'lang_chart_type': 'Chart type:',
+            'lang_prev_btn': 'Previous',
+            'lang_next_btn': 'Next'
+        }
+    },
     attachment:{
         'static':{
             'lang_input_fileStatus':' No file uploaded!',
@@ -297,12 +393,6 @@ UE.I18N['en'] = {
         'fileCanceling':'Cancel, please wait...',
         'stopUploading':'Upload has stopped...'
     },
-    highlightcode:{
-        'static':{
-            'lang_input_selectLang':'Select Language'
-        },
-        importCode:'Please enter the code!'
-    },
     emotion:{
         'static':{
             'lang_input_choice':'Choice',
@@ -326,7 +416,7 @@ UE.I18N['en'] = {
         'static':{
             'lang_input_about':'About',
             'lang_input_shortcuts':'Shortcuts',
-            'lang_input_version':'Version:1.2.4',
+            'lang_input_version':'Version:1.3.6',
             'lang_input_introduction':"UEditor is developed by Baidu Co.ltd.  It is lightweight, customizable , focusing on user experience and etc. , UEditor is based on open source BSD license , allowing free use and redistribution.",
             'lang_Txt_shortcuts':'Shortcuts',
             'lang_Txt_func':'Function',
@@ -339,10 +429,8 @@ UE.I18N['en'] = {
             'lang_Txt_italic':'Italic',
             'lang_Txt_underline':'Underline',
             'lang_Txt_selectAll':'Select All',
-            'lang_Txt_removeFormat':'Remove Format',
-            'lang_Txt_leftJustification':'Justify Left',
-            'lang_Txt_rightJustification':'Justify Right',
-            'lang_Txt_visualEnter':'Submit'
+            'lang_Txt_visualEnter':'Submit',
+            'lang_Txt_fullscreen':'Fullscreen'
         }
     },
     insertframe:{
@@ -372,7 +460,8 @@ UE.I18N['en'] = {
             lang_city:"City",
             lang_address:"Address",
             city:{value:"Beijing"},
-            lang_search:"Search"
+            lang_search:"Search",
+            lang_dynamicmap:"Dynamic map"
         },
         cityMsg:"Please enter the city name!",
         errorMsg:"Can't find the place!"
@@ -384,6 +473,8 @@ UE.I18N['en'] = {
             lang_search1:"Search",
             lang_search2:"Search",
             lang_replace:"Replace",
+            lang_searchReg:'Support regular expression ,which starts and ends with a slash ,for example "/expression/"',
+            lang_searchReg1:'Support regular expression ,which starts and ends with a slash ,for example "/expression/"',
             lang_case_sensitive1:"Case sense",
             lang_case_sensitive2:"Case sense",
             nextFindBtn:{value:"Next"},
@@ -409,6 +500,7 @@ UE.I18N['en'] = {
         'static':{
             lang_tab_insertV:"Video",
             lang_tab_searchV:"Search",
+            lang_tab_uploadV:"Upload",
             lang_video_url:" URL ",
             lang_video_size:"Video Size",
             lang_videoW:"Width",
@@ -417,7 +509,16 @@ UE.I18N['en'] = {
             videoSearchTxt:{value:"Enter the search keyword!"},
             videoType:{options:["All", "Hot", "Entertainment", "Funny", "Sports", "Science", "variety"]},
             videoSearchBtn:{value:"Search in Baidu"},
-            videoSearchReset:{value:"Clear result"}
+            videoSearchReset:{value:"Clear result"},
+
+            'lang_input_fileStatus':' No file uploaded!',
+            'startUpload':{style:"background:url(upload.png) no-repeat;"},
+
+            lang_upload_size:"Video Size",
+            lang_upload_width:"Width",
+            lang_upload_height:"Height",
+            lang_upload_alignment:"Alignment",
+            lang_format_advice:"Recommends mp4 format."
         },
         numError:"Please enter the correct Num. e.g 123,400",
         floatLeft:"Float left",
@@ -428,7 +529,34 @@ UE.I18N['en'] = {
         loading:" &nbsp;The video is loading, please wait…",
         clickToSelect:"Click to select",
         goToSource:'Visit source video ',
-        noVideo:" &nbsp; &nbsp;Sorry,can't find the video,please try again!"
+        noVideo:" &nbsp; &nbsp;Sorry,can't find the video,please try again!",
+
+        'browseFiles':'Open files',
+        'uploadSuccess':'Upload Successful!',
+        'delSuccessFile':'Remove from the success of the queue',
+        'delFailSaveFile':'Remove the save failed file',
+        'statusPrompt':' file(s) uploaded! ',
+        'flashVersionError':'The current Flash version is too low, please update FlashPlayer,then try again!',
+        'flashLoadingError':'The Flash failed loading! Please check the path or network state',
+        'fileUploadReady':'Wait for uploading...',
+        'delUploadQueue':'Remove from the uploading queue ',
+        'limitPrompt1':'Can not choose more than single',
+        'limitPrompt2':'file(s)！Please choose again！',
+        'delFailFile':'Remove failure file',
+        'fileSizeLimit':'File size exceeds the limit！',
+        'emptyFile':'Can not upload an empty file！',
+        'fileTypeError':'File type error！',
+        'unknownError':'Unknown error！',
+        'fileUploading':'Uploading,please wait...',
+        'cancelUpload':'Cancel upload',
+        'netError':'Network error',
+        'failUpload':'Upload failed',
+        'serverIOError':'Server IO error！',
+        'noAuthority':'No Permission！',
+        'fileNumLimit':'Upload limit to the number',
+        'failCheck':'Authentication fails, the upload is skipped!',
+        'fileCanceling':'Cancel, please wait...',
+        'stopUploading':'Upload has stopped...'
     },
     spechars:{
         'static':{},
@@ -439,52 +567,42 @@ UE.I18N['en'] = {
         xlzm:"The Greek",
         ewzm:"Russian",
         pyzm:"Phonetic",
+        yyyb:"English",
         zyzf:"Others"
     },
-    inserttable:{
+    'edittable':{
         'static':{
-            lang_baseInfo:"Base info",
-            lang_rows:"Rows",
-            lang_rowUnit:"row",
-            lang_width:"Width",
-            lang_widthUnit:"Unit",
-            lang_height:"Height",
-            lang_heightUnit:"Unit",
-            lang_cols:"Cols",
-            lang_colUnit:"col",
-            lang_warmPrompt:"Warm prompt",
-            lang_maxPadding:"Margins maximum can't more than 13 px! ",
-            lang_extendInfo:"Extend info",
-            lang_preview:"Can preview",
-            lang_tableBorder:"Border",
-            lang_borderSize:"Size",
-            lang_borderColor:"Color",
-            lang_mar_pad:"MarginPad",
-            lang_margin:"Mar",
-            lang_padding:"Pad",
-            lang_table_background:"Table background",
-            lang_table_alignment:"Table alignment",
-            lang_borderFor:"Border for",
-            align:{options:["Default", "Justify", "Justify Left", "Justify Right"]},
-            borderType:{options:["Only table", "All cells"]},
-            lang_forPreview:"This is used for preview"
+            'lang_tableStyle':'Table style',
+            'lang_insertCaption':'Add table header row',
+            'lang_insertTitle':'Add table title row',
+            'lang_insertTitleCol':'Add table title col',
+            'lang_tableSize':'Automatically adjust table size',
+            'lang_autoSizeContent':'Adaptive by form text',
+            'lang_orderbycontent':"Table of contents sortable",
+            'lang_autoSizePage':'Page width adaptive',
+            'lang_example':'Example',
+            'lang_borderStyle':'Table Border',
+            'lang_color':'Color:'
         },
-        errorNum:"Please enter the right number!",
-        errorColor:"Please enter the right color!",
-        clearColor:"Clear",
-        overflowMsg:"Maximum can't more than {#value} px!",
-        overflowPreviewMsg:"More than {#value} px no longer provide real-time preview!"
+        captionName:'Caption',
+        titleName:'Title',
+        cellsName:'text',
+        errorMsg:'There are merged cells, can not sort.'
     },
-    edittd:{
+    'edittip':{
         'static':{
-            lang_background:"Back Color",
-            lang_alignment:"Alignment",
-            lang_horizontal:"H",
-            lang_vertical:"V",
-            vAlign:{options:["Default", "Justify", "Justify Top", "Justify Bottom"]},
-            align:{options:["Default", "Justify", "Justify Left", "Justify Right"]}
-        },
-        clearColor:"Clear"
+            lang_delRow:'Delete entire row',
+            lang_delCol:'Delete entire col'
+        }
+    },
+    'edittd':{
+        'static':{
+            lang_tdBkColor:'Background Color:'
+        }
+    },
+    'formula':{
+        'static':{
+        }
     },
     wordimage:{
         'static':{
