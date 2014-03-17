@@ -1,4 +1,4 @@
-RealBlog是一个简单的博客系统，基于Django和MongoDB。我的个人网站\([www.xukailun.me](http://www.xukailun.me)\)即采用RealBlog构建。
+RealBlog是一个简单的博客系统，基于Django和MongoDB。我的个人网站\([www.codedig.com](http://www.codedig.com)\)即采用RealBlog构建。
 
 #主要特性
  * 支持多用户
